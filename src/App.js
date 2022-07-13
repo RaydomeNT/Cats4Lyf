@@ -31,7 +31,7 @@ const App  = () =>  {
 
 const Breeds = ({ breeds }) => {
   return (
-      <p>{item.breeds}</p>
+      <p>{breeds}</p>
   );
 };
 
