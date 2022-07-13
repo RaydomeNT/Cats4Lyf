@@ -16,7 +16,7 @@ const App  = () =>  {
     <body>
       <h1>Which cat will you take home?</h1>
       <h2>{item.id}</h2>
-      <img src={item.url} alt='cat' />
+      <img src={item.url} alt='cat' width='600'/>
       {item ? (
         item.breeds.map((breeds, index) => {
           return <Breeds breeds={breeds} />;
