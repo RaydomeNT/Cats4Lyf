@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import './App.css';
+import faker from "faker";
 
 const App  = () =>  { 
   const [item, setItem] = useState("");
@@ -7,6 +8,8 @@ const App  = () =>  {
   const getData = async () => {
     let response = await fetch("https://api.thecatapi.com/v1/images/search");
     let data = await response.json();
+    // const faker = require('faker');
+    // const randomName = faker.name,firsName();
     setItem(data[0]);
   };
   useEffect(() => {
@@ -15,7 +18,7 @@ const App  = () =>  {
   return (
     <body>
       <h1>Which cat will you take home?</h1>
-      <h2>{item.id}</h2>
+      <h2>{faker.name.firstName}</h2>
       <img src={item.url} alt='cat' width='600'/>
       {item ? (
         item.breeds.map((breeds, index) => {
