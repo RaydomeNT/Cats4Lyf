@@ -27,6 +27,7 @@ const App  = () =>  {
         {/* <p>loading...</p> */}
       
       <p>Name: {faker.name.firstName()} '{faker.lorem.word()}' {faker.name.lastName()}</p>
+      <p>Age: {faker.datatype.number(18)}</p>
       <p>Breed: {faker.animal.cat()}</p>
       <p>Job: {faker.name.jobType()}</p>
       <p>Description: {faker.commerce.productDescription()}</p>
