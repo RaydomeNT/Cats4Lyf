@@ -18,24 +18,28 @@ const App  = () =>  {
   return (
     <body>
       <h1>Which cat will you take home?</h1>
-      <h2>{faker.name.firstName}</h2>
-      <img src={item.url} alt='cat' width='600'/>
-      {item ? (
+      <img src={item.url} alt='cat' height='600'/>
+      {/* {item ? (
         item.breeds.map((breeds, index) => {
           return <Breeds breeds={breeds} />;
-        })
-      ) : (
-        <p>loading...</p>
-      )}
-      <button onClick={getData}>Choose another</button>
+        }) */}
+       {/* :  */}
+        {/* <p>loading...</p> */}
+      
+      <p>Name: {faker.name.firstName()} '{faker.lorem.word()}' {faker.name.lastName()}</p>
+      <p>Age: {faker.datatype.number(18)}</p>
+      <p>Breed: {faker.animal.cat()}</p>
+      <p>Job: {faker.name.jobType()}</p>
+      <p>Description: {faker.commerce.productDescription()}</p>
+      <button onClick={getData}>Add to cart: £{faker.commerce.price()}</button>
     </body>
   );
 };
 
-const Breeds = ({ breeds }) => {
-  return (
-      <p>{breeds}</p>
-  );
-};
+// const Breeds = ({ breeds }) => {
+//   return (
+//       <p>{breeds}</p>
+//   );
+// };
 
 export default App;
