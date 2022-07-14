@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import { useCatAPI } from "./hooks/useCatAPI";
-import { ProductCard } from "./Components/ProductCard/ProductCard";
+
+import { ProductCard } from "./Components/productCard/productCard";
+import { useCart } from "./hooks/useCart";
 import Navbar from './Components/Navbar/Navbar'
 
 function App() {
