@@ -23,14 +23,12 @@ function App() {
 
     console.log(cart.items);
 
-    
     return (
         <div className="App">
           <header>
             <Navbar />
           </header>
             <ul>
-                {catItems}
                 {catItems}
             </ul>        
         </div>
