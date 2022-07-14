@@ -2,7 +2,7 @@ import {
     Button,
     CardWrapper,
     CardTextWrapper,
-  } from "./ProductCard.styles";
+  } from "./productCard.styles";
 
 export const ProductCard = (props) => {
     return (

@@ -1,4 +1,3 @@
-// import { ProductCard } from "./ProductCard";
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`

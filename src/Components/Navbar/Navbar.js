@@ -1,4 +1,4 @@
-import navbarImage from "../Navbar/img/c4l.png";
+import navbarImage from "../Navbar/img/c4l2.png";
 import Basket from "../Basket/Basket"
 
 const Navbar = ({ basketItems, addCat, subCat  }) => {
