@@ -7,7 +7,9 @@ export const ProductCard = (props) => {
             <p>Breed: {props.breed}</p>
             <p>Job: {props.job}</p>
             <p>Description: {props.description}</p>
-            <button onClick={() => props.onBuy(props)}>Add to cart: £{props.price}</button>
+            <p>Price: £{props.price}</p>
+            <button onClick={() => props.addCat(props)}>Add To Cart</button>
+            {/* <button onClick={() => props.addCat(props)}>Add to cart: £{props.price}</button> */}
         </li>
     );
 };
