@@ -1,30 +1,36 @@
-import { useEffect, useState } from "react";
-import './App.css';
-import faker from "faker";
+import { useCatAPI } from "./hooks/useCatAPI";
+import { ProductCard } from "./Components/ProductCard/ProductCard";
+import { useCart } from "./hooks/useCart";
 
-const App  = () =>  { 
-  const [item, setItem] = useState("");
 
-  const getData = async () => {
-    let response = await fetch("https://api.thecatapi.com/v1/images/search");
-    let data = await response.json();
-    setItem(data[0]);
-  };
-  useEffect(() => {
-    getData();
-  }, []);
+function App() {
+    const catResults = useCatAPI();
+    const cart = useCart();
 
-  return (
-    <div>
-        <img src={item.url} alt='cat' height='200'/>         
-        <p>Name: {faker.name.firstName()} '{faker.lorem.word()}' {faker.name.lastName()}</p>
-        <p>Age: {faker.datatype.number(18)}</p>
-        <p>Breed: {faker.animal.cat()}</p>
-        <p>Job: {faker.name.jobType()}</p>
-        <p>Description: {faker.commerce.productDescription()}</p>
-        <button onClick={getData}>Add to cart: £{faker.commerce.price()}</button>
-    </div>
-    );
-};
+    const handleBuy = (item) => {
+        cart.addToCart(item);
+        // cart.addToCart(item.id);
+        alert(`${JSON.stringify(item)} added to basket`);
+    };
+
+    const catItems = (catResults || []).map((result, index) => (
+        <ProductCard
+            key={index}
+            {...result}
+            onBuy={handleBuy}
+        />
+    ));
+
+    console.log(cart.items);
     
+    return (
+        <div className="App">
+            <ul>
+                {catItems}
+                {catItems}
+            </ul>        
+        </div>
+    );
+}
+
 export default App;
