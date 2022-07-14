@@ -9,7 +9,7 @@ export const useCatAPI = () => {
 
         const handleResults = data => {
             const parsedResults = (data || []).map((results) => {
-                const name = `${faker.name.firstName()} ${faker.lorem.word()} ${faker.name.lastName()}`;
+                const name = `${faker.name.firstName()} '${faker.lorem.word()}' ${faker.name.lastName()}`;
                 const age = faker.datatype.number(18);
                 const breed = faker.animal.cat();
                 const job = faker.name.jobType();
