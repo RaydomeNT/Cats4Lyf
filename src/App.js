@@ -2,7 +2,6 @@ import { useCatAPI } from "./hooks/useCatAPI";
 import { ProductCard } from "./Components/ProductCard/ProductCard";
 import { useCart } from "./hooks/useCart";
 
-
 function App() {
     const catResults = useCatAPI();
     const cart = useCart();
@@ -22,6 +21,7 @@ function App() {
     ));
 
     console.log(cart.items);
+
     
     return (
         <div className="App">
