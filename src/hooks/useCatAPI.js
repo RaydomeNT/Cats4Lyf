@@ -5,7 +5,7 @@ export const useCatAPI = () => {
     const [ results, setResults ] = useState([]);
 
     const fetchData = async () => {
-        const endpoint = "https://api.thecatapi.com/v1/images/search";
+        const endpoint = "https://api.thecatapi.com/v1/images/search?limit=3";
 
         const handleResults = data => {
             const parsedResults = (data || []).map((results) => {
