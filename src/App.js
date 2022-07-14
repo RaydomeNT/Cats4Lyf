@@ -1,5 +1,5 @@
 import { useCatAPI } from "./hooks/useCatAPI";
-import { ProductCard } from "./Components/productCard/ProductCard";
+import { ProductCard } from "./Components/productCard/productCard";
 import { useCart } from "./hooks/useCart";
 import Navbar from './Components/Navbar/Navbar'
 
