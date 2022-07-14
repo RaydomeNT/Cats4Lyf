@@ -6,6 +6,7 @@ import {
 
 export const ProductCard = (props) => {
     return (
+
         <CardWrapper>
             <img src={props.url} alt={props.id}/> 
                 <div className='card'>
@@ -17,7 +18,7 @@ export const ProductCard = (props) => {
                         Description: {props.description}<b/>
                         Cost: £{props.price}
                     </CardTextWrapper>
-                <Button onClick={() => props.onBuy(props)}>Add to cart</Button>
+                      <Button onClick={() => props.addCat(props)}>Add To Cart</Button>
             </div>
         </CardWrapper>
     );
