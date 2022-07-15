@@ -12,9 +12,9 @@ const Navbar = ({ basketItems, addCat, subCat }) => {
       <NavWrapper>
 
         <Wrapper>
-          <button className ="home">&#127969;Home</button>
-          <button>&#128222;Contact</button>
-          <a href="https://www.rspca.org.uk/"><button>&#128047;RSPCA</button></a>
+          <a href="https://www.imdb.com/title/tt2224026/?ref_=fn_al_tt_1>" target="_blank" rel="noopener noreferrer"><button className ="home">&#127969;Home</button></a>
+          <a href='https://www.imdb.com/title/tt0118884/' target="_blank" rel="noopener noreferrer"><button>&#128222;Contact</button></a>
+          <a href="https://www.rspca.org.uk/" target="_blank" rel="noopener noreferrer"><button>&#128047;RSPCA</button></a>
         </Wrapper>
         
           <Basket 
