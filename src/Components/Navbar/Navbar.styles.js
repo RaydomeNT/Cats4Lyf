@@ -13,7 +13,6 @@ export const NavWrapper = styled.nav`
 export const Wrapper = styled.div`
 
     display: flex;
-
 button{
     background-color: green;
     color: white;
