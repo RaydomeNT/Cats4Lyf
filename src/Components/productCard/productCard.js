@@ -9,7 +9,7 @@ export const ProductCard = (props) => {
             </ImgWrapper>
                 <div className='card'>
                     <CardTextWrapper>
-                        Name: {props.name}<br/>
+                        <strong>Name: {props.name}<br/></strong>
                         Age: {props.age}<b/>
                         Breed: {props.breed}<b/>
                         Job: {props.job}<b/>

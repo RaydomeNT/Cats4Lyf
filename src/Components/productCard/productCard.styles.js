@@ -21,6 +21,11 @@ export const CardWrapper = styled.div`
   text-align: left;
   padding: 2px;
   margin: 10px;
+
+  strong{
+    margin: 9px 0px;
+    font: small-caps bold 18px Georgia, serif;
+  }
   
   @keyframes fadeIn {
     from {
