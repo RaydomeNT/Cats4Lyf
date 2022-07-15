@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Items from './Items';
-import {BasketWrapper, ModalOff, Position, BottomWrapper, ModalBackground} from "./Basket.styles";
+import {BasketWrapper, ModalOff, BottomWrapper, ModalBackground} from "./Basket.styles";
 
 const Basket =({ basketItems, addCat, subCat }) => {
 
@@ -22,7 +22,7 @@ const Basket =({ basketItems, addCat, subCat }) => {
 
     return (
     
-    <Position>
+    <div>
         <button onClick = {modalOn}>🛒</button>
 
         
@@ -65,7 +65,7 @@ const Basket =({ basketItems, addCat, subCat }) => {
     </BasketWrapper> 
     </ModalBackground>:null}
     
-    </Position>
+    </div>
   );
 }
 

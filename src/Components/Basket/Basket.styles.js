@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const Position = styled.div`
- 
-    position: absolute;
-
-`
-
-
 export const ModalBackground = styled.div`
     position: fixed;
     display: flex;
@@ -22,7 +15,7 @@ export const ModalBackground = styled.div`
 
 export const BasketWrapper = styled.div`
 
-    heigh: auto;
+    height: auto;
     width: 25em;
     border: solid 3px #46863D;
     border-radius: 10px;
@@ -79,7 +72,7 @@ export const YourSelection = styled.div`
     height: auto;
     width: auto;
     padding: 20px;
-    margin; 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,7 +129,7 @@ button{
 
     margin: 30px auto 0 auto;
     height: 30px;
-    width: 25em;
+    width: 75%;
     display: inline-block;
 
 }

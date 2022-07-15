@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import { useCatAPI } from "./hooks/useCatAPI";
-
 import { ProductCard } from "./Components/productCard/productCard";
 import Navbar from './Components/Navbar/Navbar'
 import { BodyWrapper } from "./Components/productCard/productCard.styles";

@@ -84,7 +84,7 @@ export const CardTextBody = styled.p`
 
 export const Button = styled.button`
 
-
+  display: flex;
   color: white;
   border: none;
   background: #46863D;
@@ -94,6 +94,9 @@ export const Button = styled.button`
   cursor: pointer;
   height: 30px;
   width: 10em;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 10px;
 
   :hover{
     background: #3A7033;
