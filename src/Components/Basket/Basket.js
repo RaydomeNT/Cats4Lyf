@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Items from './Items';
-import {BasketWrapper, ModalOff, BottomWrapper, ModalBackground} from "./Basket.styles";
+import {BasketWrapper, ModalOff, BottomWrapper, ModalBackground, Position} from "./Basket.styles";
 
 const Basket =({ basketItems, addCat, subCat }) => {
 
@@ -21,9 +21,11 @@ const Basket =({ basketItems, addCat, subCat }) => {
     const totalPrice = basketItems.reduce((a, current) => a + current.quantity * current.price, 0);
 
     return (
-    
+        
     <div>
-        <button onClick = {modalOn}>🛒</button>
+        <Position>
+        <button onClick = {modalOn}>🧺</button>
+        </Position>
 
         
 

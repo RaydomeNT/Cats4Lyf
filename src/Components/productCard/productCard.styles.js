@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const BodyWrapper = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-animation: fadeIn 2s;
 
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 2s;
 `
 
 export const CardWrapper = styled.div`
@@ -76,15 +75,9 @@ flex-direction: column;
 margin: 25px 25px 7px 25px;
 `;
 
-export const CardTextBody = styled.p`
-  color: aqua;
-  font-size: 15px;
-  font-weight: 300;
-`;
-
 export const Button = styled.button`
 
-  display: flex;
+
   color: white;
   border: none;
   background: #46863D;
@@ -94,9 +87,6 @@ export const Button = styled.button`
   cursor: pointer;
   height: 30px;
   width: 10em;
-  text-align: center;
-  justify-content: center;
-  padding-bottom: 10px;
 
   :hover{
     background: #3A7033;

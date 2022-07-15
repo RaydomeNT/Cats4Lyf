@@ -1,5 +1,21 @@
 import styled from "styled-components";
 
+export const Position = styled.div`
+
+    button{
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        border-color: rgb(0, 0, 0);
+        border-style: double;
+        height: 50px;
+        width: 120px;
+        font-size: 20px;
+        margin: 9px;
+    }
+
+`
+
 export const ModalBackground = styled.div`
     position: fixed;
     display: flex;

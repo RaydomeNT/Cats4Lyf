@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
-export const StyleNavbar = styled.nav`
-   width: 100%;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-around;
-   padding-bottom: 15px;
-`;
+export const NavWrapper = styled.nav`
+
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+`
 
 export const Wrapper = styled.div`
+
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    button{
+
+button{
     background-color: green;
     color: white;
     border-radius: 5px;
@@ -22,5 +23,14 @@ export const Wrapper = styled.div`
     height: 50px;
     width: 120px;
     font-size: 20px;
+    margin: 9px;
 }
+   
+`;
+
+export const StyleNavbar = styled.nav`
+    
+   width: 100%;
+   padding-bottom: 15px;
+
 `;
