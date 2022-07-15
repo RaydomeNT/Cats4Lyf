@@ -32,5 +32,5 @@ export const StyleNavbar = styled.nav`
     
    width: 100%;
    padding-bottom: 15px;
-
+   overflow-x: hidden;
 `;
