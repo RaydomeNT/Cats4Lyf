@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.e829bb3d.js",
-    "static/media/newbanner.png": "/static/media/newbanner.18e18b8fff7afa08af60.png",
-    "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.e829bb3d.js.map": "/static/js/main.e829bb3d.js.map"
+    "main.css": "/RaydomeNT/Cats4Lyf/static/css/main.e6c13ad2.css",
+    "main.js": "/RaydomeNT/Cats4Lyf/static/js/main.e041d07d.js",
+    "static/media/newbanner.png": "/RaydomeNT/Cats4Lyf/static/media/newbanner.18e18b8fff7afa08af60.png",
+    "index.html": "/RaydomeNT/Cats4Lyf/index.html",
+    "main.e6c13ad2.css.map": "/RaydomeNT/Cats4Lyf/static/css/main.e6c13ad2.css.map",
+    "main.e041d07d.js.map": "/RaydomeNT/Cats4Lyf/static/js/main.e041d07d.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.e829bb3d.js"
+    "static/js/main.e041d07d.js"
   ]
 }
