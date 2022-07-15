@@ -1,19 +1,24 @@
 import React from 'react'
+import {YourSelection, QuantityWrapper, SectionWrapper,CatName} from "./Basket.styles";
 
 const Items = ({ basketItems, addCat, subCat }) => {
   return (
-    <div>
+    <YourSelection>
         {basketItems.map((product) => (
-            <div key={product.id}>
-            {product.name}
-            <button onClick={() => subCat(product)}>-</button>
-            <button onClick={() => addCat(product)}>+</button>
-            {product.quantity} x £{product.price}
-            </div>
+          <SectionWrapper >
+            <CatName key={product.id}>{product.name}</CatName>
+            <QuantityWrapper>
+              <button onClick={() => subCat(product)}>-</button>
+              <button onClick={() => addCat(product)}>+</button>
+              <p>
+              {product.quantity} x £{product.price}
+              </p>
+            </QuantityWrapper>
+             
+            </SectionWrapper>
         ))}
-    </div>
+    </YourSelection>
   )
 }
 
 export default Items
-

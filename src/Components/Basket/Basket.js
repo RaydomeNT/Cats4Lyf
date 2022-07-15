@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Items from './Items';
+import {BasketWrapper, ModalOff, Position, BottomWrapper, ModalBackground} from "./Basket.styles";
 
 const Basket =({ basketItems, addCat, subCat }) => {
 
@@ -11,6 +12,9 @@ const Basket =({ basketItems, addCat, subCat }) => {
         // setModalShow(true);
     };
 
+    // Set Basket button to hide content on onclick
+    const modalOff = () => {setModalShow(false)};
+
     
 
     // Calculate the total price
@@ -18,12 +22,18 @@ const Basket =({ basketItems, addCat, subCat }) => {
 
     return (
     
-    <div>
+    <Position>
         <button onClick = {modalOn}>🛒</button>
 
-        {modalShow ? <div>
+        
+
+        {modalShow ?<ModalBackground>
+            <BasketWrapper>
        
-            <h2>Your Basket</h2>
+            <ModalOff>
+                <button onClick = {modalOff}>X</button>
+            </ModalOff>
+            <h2>Your Cat Basket</h2>
             <Items basketItems = {basketItems}
             subCat = {subCat}
             addCat = {addCat}/>
@@ -31,26 +41,31 @@ const Basket =({ basketItems, addCat, subCat }) => {
             {/* If Basket is empty display a message */}
             {basketItems.length === 0 && (
             <div>
-            <p>Your basket is empty</p>
+            <p>You have no cats</p>
             </div>
             )}
 
             {/* If Basket length is not equal to 0 show total and checkout */}
             {basketItems.length !== 0 && (
-            <div>
+            <BottomWrapper>
 
             {/* Show total price */}
-            <strong>Total Price</strong>
+            <hr></hr>
+            <strong>Total Price:</strong>
+            <br/>
             <strong>£{totalPrice}</strong>
+            <hr></hr>
 
             {/* Fake checkout */}
-            <button onClick={() => alert('Checkout!')}>Checkout</button>
+            <button onClick={() => alert(`Purr-Fect! Your Checkout is Complete! Thank you for shopping at cats4life!`)}><strong>Checkout?</strong></button>
             
-            </div>
+            </BottomWrapper>
             )}
 
-        </div> :null}
-    </div>
+    </BasketWrapper> 
+    </ModalBackground>:null}
+    
+    </Position>
   );
 }
 

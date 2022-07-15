@@ -2,8 +2,8 @@ import React, {useState} from "react";
 import { useCatAPI } from "./hooks/useCatAPI";
 
 import { ProductCard } from "./Components/productCard/productCard";
-// import { useCart } from "./hooks/useCart";
 import Navbar from './Components/Navbar/Navbar'
+import { BodyWrapper } from "./Components/productCard/productCard.styles";
 
 function App() {
     const catResults = useCatAPI();
@@ -52,9 +52,10 @@ function App() {
             />
             
           </header>
-            <ul>
+            
+            <BodyWrapper>
                 {catItems}
-            </ul>        
+            </BodyWrapper>        
         </div>
     );
 }

@@ -1,14 +1,12 @@
-import {
-    Button,
-    CardWrapper,
-    CardTextWrapper,
-  } from "./productCard.styles";
+import {Button, CardWrapper, CardTextWrapper, ImgWrapper} from "./productCard.styles";
 
 export const ProductCard = (props) => {
     return (
 
         <CardWrapper>
-            <img src={props.url} alt={props.id}/> 
+            <ImgWrapper>
+            <img src={props.url} alt={props.id}/>
+            </ImgWrapper>
                 <div className='card'>
                     <CardTextWrapper>
                         Name: {props.name}<br/>
@@ -18,7 +16,7 @@ export const ProductCard = (props) => {
                         Description: {props.description}<b/>
                         Cost: £{props.price}
                     </CardTextWrapper>
-                      <Button onClick={() => props.addCat(props)}>Add To Cart</Button>
+                    <Button onClick={() => props.addCat(props)}>Add To Cart</Button>
             </div>
         </CardWrapper>
     );
